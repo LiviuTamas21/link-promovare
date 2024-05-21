@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Invest SRL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(255, 99, 71, 0.7), rgba(255, 99, 71, 0)), url('pagina fundal.avif') no-repeat center center fixed;
+            background-size: 50%;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+        
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.7), transparent);
+            animation: glow 3s infinite alternate;
+            border-radius: 50%;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+       
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section-title {
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-content {
+            opacity: 0;
+            animation: fadeInContent 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInContent {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .about, .history, .achievements, .team, .contact {
+            margin-bottom: 60px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 2px solid #ccc;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+
+        th {
+            background-color: #ffcc00;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:hover {
+            background-color: #ffebcc;
+        }
+
+        .team-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            margin-bottom: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member img {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        .team-member:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+
+        .footer-left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-left img {
+            margin: 5px;
+            height: 30px;
+            width: auto;
+            transition: transform 0.3s;
+        }
+
+        .footer-left img:hover {
+            transform: scale(1.2);
+        }
+
+        .contact-form {
+            margin-top: 20px;
+        }
+
+        .contact-form textarea {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #ffcc00;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#index.html">Acasă</a></li>
+                <li><a href="/About.html">Despre noi</a></li>
+                <li><a href="/Ocupatie.html">Servicii</a></li>
+                <li><a href="/Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title">Market Invest SRL</div>
+
+    <main>
+        <section id="about" class="about">
+            <h1 class="section-title">Cine suntem noi</h1>
+            <p class="section-content">Suntem o echipă veselă, motivată, formată din 7 colegi serioși și muncitori. Nu renunțăm la dorințele noastre indiferent de greutăți și situații. Dorim să oferim cele mai calitative produse de care clientul poate beneficia.</p>
+            <p class="section-content">Compania noastră se specializează în servicii de marketing digital, ajutând afacerile să crească prin strategii eficiente și inovatoare. Echipa noastră de experți în marketing este dedicată să creeze campanii personalizate care să atingă publicul țintă și să genereze rezultate măsurabile.</p>
+            <p class="section-content">Folosim cele mai recente tehnologii și platforme pentru a ne asigura că mesajele clienților noștri ajung acolo unde contează cel mai mult. De la optimizarea pentru motoarele de căutare (SEO) la gestionarea rețelelor sociale și campanii de publicitate plătită, oferim o gamă completă de servicii pentru a satisface nevoile variate ale clienților noștri.</p>
+        </section>
+
+        <section id="history" class="history">
+            <h1 class="section-title">Istoria noastră</h1>
+            <p class="section-content">Echipa noastră s-a format în anul 2017 în localitatea Baia Mare, județul Maramureș. Datorită sprijinului acordat de către guvernul european, am reușit să ajungem la performanțe record în țară la calitatea produselor digitale.</p>
+            <p class="section-content">Începând cu un mic grup de pasionați de marketing, am crescut rapid datorită dedicării și succesului în proiectele noastre. În primii ani, ne-am concentrat pe dezvoltarea unei baze solide de clienți locali. Am creat campanii de succes care au ajutat afaceri locale să își crească vizibilitatea și să își extindă baza de clienți.</p>
+            <p class="section-content">Pe măsură ce compania noastră a crescut, am început să colaborăm cu clienți naționali și internaționali, extinzându-ne portofoliul de servicii și adaptându-ne la nevoile diverse ale pieței globale. Astăzi, suntem mândri să oferim servicii de marketing de înaltă calitate pentru clienți din diferite industrii, inclusiv tehnologie, sănătate, retail și multe altele.</p>
+        </section>
+
+        <section id="achievements" class="achievements">
+            <h1 class="section-title">Reușitele și produsele noastre</h1>
+            <p class="section-content">De-a lungul anilor, am avut numeroase reușite și am dezvoltat o gamă variată de produse de marketing digital care au ajutat afacerile să prospere.</p>
+            <ul class="section-content">
+                <li><b>SEO avansat:</b> Am dezvoltat strategii avansate de optimizare a motoarelor de căutare care au crescut vizibilitatea online a clienților noștri și au dus la creșterea traficului organic.</li>
+                <li><b>Publicitate PPC:</b> Am creat campanii de publicitate pay-per-click pe Google Ads și alte platforme, generând conversii și ROI impresionant pentru clienții noștri.</li>
+                <li><b>Marketing pe rețele sociale:</b> Am gestionat conturi de social media pentru clienții noștri, crescând semnificativ nivelul de engagement și construind comunități loiale.</li>
+                <li><b>Content marketing:</b> Am produs conținut de calitate care a rezonat cu publicul țintă, crescând autoritatea și influența brandurilor clienților noștri.</li>
+                <li><b>Campanii de email marketing:</b> Am conceput și implementat campanii de email marketing care au adus rezultate remarcabile în termeni de deschidere, clicuri și conversii.</li>
+            </ul>
+        </section>
+
+        <section id="team" class="team">
+            <h1 class="section-title">Echipa noastră</h1>
+            <div class="team-info">
+                <div class="team-member">
+                    <img src="baiat.jpg" alt="Alexandru">
+                    <b>Alexandru</b>
+                </div>
+                <div class="team-member">
+                    <img src="fata.jpg" alt="Andreea">
+                    <b>Andreea</b>
+                </div>
+                <div class="team-member">
+                    <img src="baiat 2.jpg" alt="George">
+                    <b>George</b>
+                </div>
+                <div class="team-member">
+                    <img src="fata 2.jpg" alt="Elena">
+                    <b>Elena</b>
+                </div>
+                <div class="team-member">
+                    <img src="baiat 3.jpg" alt="Florin">
+                    <b>Florin</b>
+                </div>
+                <div class="team-member">
+                    <img src="fata 3.jpg" alt="Cristina">
+                    <b>Cristina</b>
+                </div>
+                <div class="team-member">
+                    <img src="baiat 4.jpg" alt="Gabriel">
+                    <b>Gabriel</b>
+                </div>
+            </div>
+        </section>
+
+        <section id="tabel">
+            <h1 class="section-title">Detalii angajați</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prenume</th>
+                        <th>Ocupație</th>
+                        <th>Număr de telefon</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alexandru</td>
+                        <td>Manager</td>
+                        <td>0721234567</td>
+                        <td>alexandru@marketinvest.com</td>
+                    </tr>
+                    <tr>
+                        <td>Andreea</td>
+                        <td>Marketing Specialist</td>
+                        <td>0721234568</td>
+                        <td>andreea@marketinvest.com</td>
+                    </tr>
+                    <tr>
+                        <td>Cristina</td>
+                        <td>SEO Expert</td>
+                        <td>0721234569</td>
+                        <td>cristina@marketinvest.com</td>
+                    </tr>
+                    <tr>
+                        <td>George</td>
+                        <td>Content Creator</td>
+                        <td>0721234570</td>
+                        <td>george@marketinvest.com</td>
+                    </tr>
+                    <tr>
+                        <td>Elena</td>
+                        <td>Social Media Manager</td>
+                        <td>0721234571</td>
+                        <td>elena@marketinvest.com</td>
+                    </tr>
+                    <tr>
+                        <td>Florin</td>
+                        <td>PPC Specialist</td>
+                        <td>0721234572</td>
+                        <td>florin@marketinvest.com</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel</td>
+                        <td>Email Marketing Specialist</td>
+                        <td>0721234573</td>
+                        <td>gabriel@marketinvest.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="employees" class="employees">
+            <h1 class="section-title">Detalii personale cu angajații companiei noastre</h1>
+            <ul>
+                <li>Fiecare dintre angajații noștri și-au exprimat opiniile personale în public, iar noi am notat detaliile lor, lista o găsiți dedesubt:</li>
+            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Prenume</th>
+                        <th>Nume</th>
+                        <th>Vârstă</th>
+                        <th>Pasiune</th>
+                        <th>Serviciu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alexandru</td>
+                        <td>Mihai</td>
+                        <td>30</td>
+                        <td>Fotograf</td>
+                        <td>Freelancer</td>
+                    </tr>
+                    <tr>
+                        <td>Andreea</td>
+                        <td>Georgescu</td>
+                        <td>25</td>
+                        <td>Programare</td>
+                        <td>Software Developer</td> 
+                    </tr>
+                    <tr>
+                        <td>Cristina</td>
+                        <td>Ionescu</td>
+                        <td>35</td>
+                        <td rowspan="2">Șofer de curse</td>
+                        <td rowspan="2">Inginer Auto</td>
+                    </tr>
+                    <tr>
+                        <td>George</td>
+                        <td>Popescu</td>
+                        <td>28</td>
+                    </tr>
+                    <tr>
+                        <td>Elena</td>
+                        <td>Rădulescu</td>
+                        <td>32</td>
+                        <td>Pilot de curse</td>
+                        <td>Inginer Mecanic</td>
+                    </tr>
+                    <tr>
+                        <td>Florin</td>
+                        <td>Stoica</td>
+                        <td rowspan="2">23</td>
+                        <td>Grafică</td>
+                        <td>Designer Grafic</td>
+                    </tr>
+                    <tr>
+                        <td>Gabriel</td>
+                        <td>Ivan</td>
+                        <td>Analiză Financiară</td>
+                        <td>Analist Financiar</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact" class="contact">
+            <h1 class="section-title">Contactează-ne</h1>
+            <p>Adresa: Baia Mare, Maramureș, bd Republicii 9, față în față cu Dedeman</p>
+            <p>Email: excelsis@gmail.com</p>
+            <p>Telefon:</p>
+            <ul>
+                <li>Număr mobil: +40 753 925 195</li>
+                <li>Număr fix sediu: +40 11 258 123</li>
+            </ul>
+            <div class="contact-form">
+                <h2>Lasă-ne o recenzie</h2>
+                <textarea rows="5" placeholder="Descrie recenzia ta despre munca noastră"></textarea>
+                <button>Trimite</button>
+            </div>
+            <div class="contact-form">
+                <h2>Completează următoarele câmpuri pentru a te contacta:</h2>
+                <label for="nume">Nume:</label>
+                <textarea id="nume" rows="1"></textarea>
+                <label for="prenume">Prenume:</label>
+                <textarea id="prenume" rows="1"></textarea>
+                <label for="varsta">Vârsta:</label>
+                <textarea id="varsta" rows="1"></textarea>
+                <label for="telefon">Numărul tău de telefon:</label>
+                <textarea id="telefon" rows="1"></textarea>
+                <label for="email">Email-ul tău:</label>
+                <textarea id="email" rows="1"></textarea>
+                <button>Trimite</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="fb pic.png" alt="">
+            <img src="instagram logo.jpg.webp" alt="">
+            <img src="twitter.png" alt="">
+            <img src="X logo.avif" alt="">
+            <img src="tiktok.webp" alt="">
+        </div>
+    </footer>
+</body>
+</html>

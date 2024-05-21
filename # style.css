@@ -1,0 +1,13 @@
+nav > div, nav > ul {
+    display: inline-block;
+}
+
+nav > ul > li {
+    list-style: none;
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}

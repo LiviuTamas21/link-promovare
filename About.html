@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre noi - Market Invest SRL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, rgba(255, 99, 71, 0.7), rgba(255, 99, 71, 0)), url('pagina fundal.avif') no-repeat center center fixed;
+            background-size: 50%;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: right;
+        }
+
+        header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin-left: 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5em;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section-title {
+            color: #333;
+            margin-bottom: 20px;
+            position: relative;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-content {
+            opacity: 0;
+            animation: fadeInContent 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeInContent {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .about, .history, .achievements, .team, .contact {
+            margin-bottom: 60px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .team-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .team-member {
+            text-align: center;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .team-member:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .team-member p {
+            font-size: 1.1em;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="despre-noi.html">Despre noi</a></li>
+                <li><a href="servicii.html">Servicii</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="title">Despre noi</div>
+
+    <main>
+        <section class="about">
+            <h1 class="section-title">Cine suntem noi</h1>
+            <p class="section-content">Suntem o echipă veselă, motivată, formată din 7 colegi serioși și muncitori. Nu renunțăm la dorințele noastre indiferent de greutăți și situații. Dorim să oferim cele mai calitative produse de care clientul poate beneficia.</p>
+        </section>
+
+        <section class="history">
+            <h1 class="section-title">Istoria noastră</h1>
+            <p class="section-content">Echipa noastră s-a format în anul 2017 în localitatea Baia Mare, județul Maramureș. Datorită sprijinului acordat de către guvernul european, am reușit să ajungem la performanțe record în țară la calitatea produselor digitale.</p>
+        </section>
+
+        <section class="team">
+            <h1 class="section-title">Echipa noastră</h1>
+            <div class="team-info">
+                <div class="team-member">
+                    <img src="baiat.jpg" alt="Alexandru">
+                    <b>Alexandru</b>
+                </div>
+                <div class="team-member">
+                    <img src="fata.jpg" alt="Andreea">
+                    <b>Andreea</b>
+                </div>
+                <div class="team-member">
+                    <img src="baiat 2.jpg" alt="George">
+                    <b>George</b>
+                </div>
+                <div class="team-member">
+                    <img src="fata 2.jpg" alt="Elena">
+                    <b>Elena</b>
+                </div>
+                <div class="team-member">
+                    <img src="baiat 3.jpg" alt="Florin">
+                    <b>Florin</b>
+                </div>
+                <div class="team-member">
+                    <img src="fata 3.jpg" alt="Cristina">
+                    <b>Cristina</b>
+                </div>
+                <div class="team-member">
+                    <img src="baiat 4.jpg" alt="Gabriel">
+                    <b>Gabriel</b>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
